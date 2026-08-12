@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding-top: 85px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid #e2e8f0;
+    z-index: 1000;
+}
+
+.brand {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #213555;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: #3e5879;
+    color: #fff;
+}
+
+.btn-login-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #213555;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background 0.2s;
+}
+
+.btn-login-nav:hover {
+    background-color: #3e5879;
+}
+
+.user-badge-logged {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f1f5f9;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #cbd5e1;
+}
+
+.user-badge-logged i.fa-circle-user {
+    font-size: 1.3rem;
+    color: #213555;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.1;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #1e293b;
+}
+
+.user-role {
+    font-size: 0.72rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.btn-logout {
+    background: transparent;
+    color: #ef4444;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: 4px;
+    transition: transform 0.2s;
+}
+
+.btn-logout:hover {
+    transform: scale(1.15);
+    color: #dc2626;
+}
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+.pagamento-card,
+.historico-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 25px;
+}
+
+.valor-confirmacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.valor-confirmacao strong {
+    color: #166534;
+    font-size: 1.5rem;
+}
+
+.metodos-pagamento h3 {
+    font-size: 1rem;
+    color: #213555;
+    margin-bottom: 15px;
+}
+
+.opcoes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.opcao-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #cbd5e1;
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.opcao-item:hover {
+    border-color: #3e5879;
+    background: #f8fafc;
+}
+
+.btn-confirmar {
+    width: 100%;
+    padding: 14px;
+    background: #3e5879;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-confirmar:hover {
+    background: #213555;
+}
+
+.status-msg {
+    font-size: 0.85rem;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.status-msg.sucesso {
+    display: block;
+    background: #dcfce7;
+    color: #166534;
+}
+
+#listaHistorico {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#listaHistorico li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.empty-msg {
+    color: #94a3b8;
+    font-style: italic;
+}
