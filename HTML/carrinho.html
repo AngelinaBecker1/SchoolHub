@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolHub - Mensalidades</title>
+    <link rel="stylesheet" href="../CSS/carrinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="brand">
+            🎓 SchoolHub
+        </div>
+        <nav class="nav-links">
+            <a href="inicio.html" class="active">Início</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="lista-espera.html">Rematrícula</a>
+            <a href="carrinho.html">Mensalidades</a>
+            <a href="pagamentos.html">Pagamentos</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>💳 Mensalidades & Taxas Escolares</h2>
+        <p class="subtitle">Selecione as faturas que deseja incluir para pagamento.</p>
+
+        <section class="grid-mensalidades">
+            <div class="fatura-card" data-id="1" data-descricao="Mensalidade - Agosto / 2026" data-valor="450.00">
+                <div class="fatura-info">
+                    <h4>Mensalidade - Agosto / 2026</h4>
+                    <p>Vencimento: 10/08/2026</p>
+                    <span class="preco">R$ 450,00</span>
+                </div>
+                <button onclick="adicionarFatura(1, 'Mensalidade - Agosto / 2026', 450.00)" class="btn-add">+
+                    Adicionar</button>
+            </div>
+
+            <div class="fatura-card" data-id="2" data-descricao="Material Didático - 2º Semestre" data-valor="280.00">
+                <div class="fatura-info">
+                    <h4>Material Didático - 2º Semestre</h4>
+                    <p>Vencimento: 15/08/2026</p>
+                    <span class="preco">R$ 280,00</span>
+                </div>
+                <button onclick="adicionarFatura(2, 'Material Didático - 2º Semestre', 280.00)" class="btn-add">+
+                    Adicionar</button>
+            </div>
+
+            <div class="fatura-card" data-id="3" data-descricao="Taxa da Feira de Ciências" data-valor="60.00">
+                <div class="fatura-info">
+                    <h4>Taxa de Eventos / Feira de Ciências</h4>
+                    <p>Vencimento: 25/08/2026</p>
+                    <span class="preco">R$ 60,00</span>
+                </div>
+                <button onclick="adicionarFatura(3, 'Taxa da Feira de Ciências', 60.00)" class="btn-add">+
+                    Adicionar</button>
+            </div>
+        </section>
+
+        <section class="resumo-carrinho">
+            <h3>Resumo das Faturas Selecionadas</h3>
+            <ul id="listaFaturas">
+                <li class="empty-msg">Nenhuma fatura selecionada.</li>
+            </ul>
+
+            <div class="total-box">
+                <strong>Total a Pagar:</strong>
+                <span id="valorTotal">R$ 0,00</span>
+            </div>
+
+            <button onclick="irParaPagamento()" class="btn-checkout">Prosseguir para Pagamento →</button>
+        </section>
+    </main>
+
+    <script src="../JS/carrinho.js"></script>
+    <script src="../JS/sessao.js"></script>
+</body>
+
+</html>

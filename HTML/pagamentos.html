@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolHub - Pagamentos</title>
+    <link rel="stylesheet" href="../CSS/pagamentos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="brand">
+            🎓 SchoolHub
+        </div>
+        <nav class="nav-links">
+            <a href="inicio.html" class="active">Início</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="lista-espera.html">Rematrícula</a>
+            <a href="carrinho.html">Mensalidades</a>
+            <a href="pagamentos.html">Pagamentos</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>💳 Finalizar Pagamento</h2>
+        <p class="subtitle">Confirme o valor das mensalidades e escolha o método de pagamento.</p>
+
+        <section class="pagamento-card">
+            <div class="valor-confirmacao">
+                <span>Total Selecionado:</span>
+                <strong id="displayValorTotal">R$ 0,00</strong>
+            </div>
+
+            <div class="metodos-pagamento">
+                <h3>Escolha a Forma de Pagamento:</h3>
+
+                <div class="opcoes-grid">
+                    <label class="opcao-item">
+                        <input type="radio" name="metodo" value="Pix" checked>
+                        <span><i class="fa-solid fa-qrcode"></i> Pix (Aprovação Instantânea)</span>
+                    </label>
+
+                    <label class="opcao-item">
+                        <input type="radio" name="metodo" value="Cartão de Crédito">
+                        <span><i class="fa-solid fa-credit-card"></i> Cartão de Crédito</span>
+                    </label>
+
+                    <label class="opcao-item">
+                        <input type="radio" name="metodo" value="Boleto Bancário">
+                        <span><i class="fa-solid fa-barcode"></i> Boleto Bancário</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="mensagemPagamento" class="status-msg"></div>
+
+            <button onclick="confirmarPagamento()" class="btn-confirmar">Confirmar & Salvar Pagamento</button>
+        </section>
+
+        <section class="historico-card">
+            <h3>Histórico de Pagamentos Confirmados</h3>
+            <ul id="listaHistorico">
+                <li class="empty-msg">Nenhum pagamento registrado até o momento.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="../JS/pagamentos.js"></script>
+    <script src="../JS/sessao.js"></script>
+</body>
+
+</html>

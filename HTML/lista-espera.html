@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolHub - Rematrícula e Lista de Espera</title>
+    <link rel="stylesheet" href="../CSS/lista-espera.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="brand">
+            🎓 SchoolHub
+        </div>
+        <nav class="nav-links">
+            <a href="inicio.html" class="active">Início</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="lista-espera.html">Rematrícula</a>
+            <a href="carrinho.html">Mensalidades</a>
+            <a href="pagamentos.html">Pagamentos</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Solicitação de Rematrícula e Vagas</h2>
+
+        <form id="formRematricula" class="form-card">
+            <div class="input-group">
+                <label for="nomeRematricula">Nome do Aluno</label>
+                <input type="text" id="nomeRematricula" placeholder="Digite o nome" required>
+            </div>
+
+            <div class="input-group">
+                <label for="anoPretendido">Ano Letivo Desejado</label>
+                <select id="anoPretendido" required>
+                    <option value="2027">2027</option>
+                    <option value="2026 - 2º Semestre">2026 - 2º Semestre</option>
+                </select>
+            </div>
+
+            <div id="statusEspera" class="status-msg"></div>
+
+            <button type="submit" class="btn-submit">Enviar Solicitação</button>
+        </form>
+
+        <div class="solicitacoes-card">
+            <h3>Minhas Solicitações Salvas</h3>
+            <ul id="minhasSolicitacoes"></ul>
+        </div>
+    </main>
+
+    <script src="../JS/lista-espera.js"></script>
+    <script src="../JS/sessao.js"></script>
+</body>
+
+</html>

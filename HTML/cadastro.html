@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolHub - Cadastro de Aluno</title>
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="brand">
+            🎓 SchoolHub
+        </div>
+        <nav class="nav-links">
+            <a href="inicio.html" class="active">Início</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="lista-espera.html">Rematrícula</a>
+            <a href="carrinho.html">Mensalidades</a>
+            <a href="pagamentos.html">Pagamentos</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Cadastro de Novo Aluno</h2>
+        <p class="subtitle">Preencha os dados abaixo para registrar o aluno no sistema.</p>
+
+        <form id="formCadastro" class="form-card">
+            <div class="input-group">
+                <label for="nomeAluno">Nome Completo do Aluno</label>
+                <input type="text" id="nomeAluno" placeholder="Ex: João Silva" required>
+            </div>
+
+            <div class="input-group">
+                <label for="turma">Série / Turma</label>
+                <select id="turma" required>
+                    <option value="">Selecione...</option>
+                    <option value="6º Ano A">6º Ano A</option>
+                    <option value="7º Ano B">7º Ano B</option>
+                    <option value="8º Ano A">8º Ano A</option>
+                    <option value="9º Ano C">9º Ano C</option>
+                    <option value="1º Ano EM">1º Ano Ensino Médio</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="emailResponsavel">E-mail do Responsável</label>
+                <input type="email" id="emailResponsavel" placeholder="responsavel@email.com" required>
+            </div>
+
+            <div id="statusCadastro" class="status-msg"></div>
+
+            <button type="submit" class="btn-submit">Salvar Cadastro</button>
+        </form>
+
+        <section class="lista-secao">
+            <h3>Alunos Cadastrados Recentemente</h3>
+            <ul id="listaAlunosContainer">
+                <li class="empty-msg">Nenhum aluno cadastrado no momento.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="../JS/cadastro.js"></script>
+    <script src="../JS/sessao.js"></script>
+</body>
+
+</html>

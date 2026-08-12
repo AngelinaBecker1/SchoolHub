@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolHub - Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+
+    <main class="main-container">
+        <div class="form-container">
+            <div class="brand-icon">🎓 SchoolHub</div>
+            <h2>Acesso ao Portal</h2>
+            <p class="subtitle">Insira suas credenciais para acessar o sistema</p>
+
+            <form id="loginForm">
+                <div class="input-field">
+                    <input type="email" id="loginEmail" placeholder="Digite seu E-mail" required>
+                </div>
+
+                <div class="input-field">
+                    <select id="loginTipo" required>
+                        <option value="Aluno">Sou Aluno</option>
+                        <option value="Responsável">Sou Responsável</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <input type="password" id="loginSenha" placeholder="Digite sua Senha" required>
+                </div>
+
+                <button type="submit" class="btn-submit">ACESSAR SISTEMA</button>
+            </form>
+
+            <p class="footer-text">
+                Não possui cadastro? <a href="cadastro.html">Cadastrar Aluno</a>
+            </p>
+
+            <a href="inicio.html" class="back-link">← Voltar para o Início</a>
+        </div>
+    </main>
+
+    <script src="../JS/login.js"></script>
+</body>
+
+</html>
