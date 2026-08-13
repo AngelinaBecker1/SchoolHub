@@ -4,61 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SchoolHub - Login</title>
-    <link rel="stylesheet" href="../CSS/login.css">
+    <title>SchoolHub - Início</title>
+    <link rel="stylesheet" href="../CSS/inicio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
     <header class="navbar">
-        <div class="brand">
+        <div class="brand"> 
             🎓 SchoolHub
         </div>
         <nav class="nav-links">
-            <a href="inicio.html">Início</a>
+            <a href="inicio.html" class="active">Início</a>
+            <a href="aluno.html">Área do Aluno</a>
             <a href="cadastro.html">Cadastro</a>
             <a href="lista-espera.html">Rematrícula</a>
             <a href="carrinho.html">Mensalidades</a>
             <a href="pagamentos.html">Pagamentos</a>
+            <a href="professor.html">Área do Professor</a>
         </nav>
     </header>
+    <main class="container">
+        <h2 class="section-title">Mural de Avisos e Notícias</h2>
 
-    <main class="main-container">
-        <div class="form-container">
-            <div class="brand-icon">🎓 SchoolHub</div>
-            <h2>Acesso ao Portal</h2>
-            <p class="subtitle">Insira suas credenciais para acessar o sistema</p>
-
-            <form id="loginForm">
-                <div class="input-field">
-                    <input type="email" id="loginEmail" placeholder="Digite seu E-mail (ex: aluno@email.com)" required>
+        <div class="cards-grid">
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500" alt="Retorno das Aulas">
+                <div class="card-body">
+                    <span class="card-tag aviso">Aviso</span>
+                    <h3 class="card-title">Retorno das Aulas - 2º Semestre</h3>
+                    <p class="card-text">Daremos início ao novo bimestre escolar na próxima semana. Confira os horários
+                        e salas atualizados.</p>
+                    <span class="card-date">10/08/2026</span>
                 </div>
+            </article>
 
-                <div class="input-field">
-                    <select id="loginTipo" required>
-                        <option value="Aluno">Sou Aluno</option>
-                        <option value="Professor">Sou Professor</option>
-                        <option value="Responsável">Sou Responsável</option>
-                    </select>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=500" alt="Feira de Ciências">
+                <div class="card-body">
+                    <span class="card-tag evento">Evento</span>
+                    <h3 class="card-title">Inscrições para a Feira de Ciências</h3>
+                    <p class="card-text">Os grupos de alunos já podem inscrever seus projetos temáticos diretamente na
+                        coordenação.</p>
+                    <span class="card-date">08/08/2026</span>
                 </div>
+            </article>
 
-                <div class="input-field">
-                    <input type="password" id="loginSenha" placeholder="Digite sua Senha" required>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=500" alt="Biblioteca">
+                <div class="card-body">
+                    <span class="card-tag biblioteca">Biblioteca</span>
+                    <h3 class="card-title">Renovação do Acervo de Livros</h3>
+                    <p class="card-text">Foram adicionadas novas obras literárias e apostilas preparatórias para os
+                        exames deste ano.</p>
+                    <span class="card-date">05/08/2026</span>
                 </div>
-
-                <button type="submit" class="btn-submit">ACESSAR SISTEMA</button>
-            </form>
-
-            <p class="footer-text">
-                Não possui cadastro? <a href="cadastro.html">Cadastrar Aluno</a>
-            </p>
-
-            <a href="inicio.html" class="back-link">← Voltar para o Início</a>
+            </article>
         </div>
     </main>
 
-    <script src="../JS/login.js"></script>
+    <script src="../JS/inicio.js"></script>
     <script src="../JS/sessao.js"></script>
 </body>
 
