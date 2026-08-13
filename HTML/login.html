@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SchoolHub - Login</title>
     <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+
+    <header class="navbar">
+        <div class="brand">
+            🎓 SchoolHub
+        </div>
+        <nav class="nav-links">
+            <a href="inicio.html">Início</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="lista-espera.html">Rematrícula</a>
+            <a href="carrinho.html">Mensalidades</a>
+            <a href="pagamentos.html">Pagamentos</a>
+        </nav>
+    </header>
 
     <main class="main-container">
         <div class="form-container">
@@ -18,12 +32,13 @@
 
             <form id="loginForm">
                 <div class="input-field">
-                    <input type="email" id="loginEmail" placeholder="Digite seu E-mail" required>
+                    <input type="email" id="loginEmail" placeholder="Digite seu E-mail (ex: aluno@email.com)" required>
                 </div>
 
                 <div class="input-field">
                     <select id="loginTipo" required>
                         <option value="Aluno">Sou Aluno</option>
+                        <option value="Professor">Sou Professor</option>
                         <option value="Responsável">Sou Responsável</option>
                     </select>
                 </div>
@@ -44,6 +59,7 @@
     </main>
 
     <script src="../JS/login.js"></script>
+    <script src="../JS/sessao.js"></script>
 </body>
 
 </html>

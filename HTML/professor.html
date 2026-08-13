@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolHub - Área do Professor</title>
+    <link rel="stylesheet" href="../CSS/professor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="brand">
+            🎓 SchoolHub
+        </div>
+        <nav class="nav-links">
+            <a href="inicio.html">Início</a>
+            <a href="aluno.html">Área do Aluno</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="lista-espera.html">Rematrícula</a>
+            <a href="carrinho.html">Mensalidades</a>
+            <a href="pagamentos.html">Pagamentos</a>
+            <a href="professor.html" class="active">Área do Professor</a>
+            <a href="login.html" class="btn-login-nav">
+                <i class="fa-solid fa-user"></i> Entrar
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="prof-header">
+            <div>
+                <h2><i class="fa-solid fa-chalkboard-user"></i> Portal Docente</h2>
+                <p>Gerencie as turmas e acompanhe os seus alunos.</p>
+            </div>
+            <button class="btn-novo-aviso"><i class="fa-solid fa-plus"></i> Novo Comunicado</button>
+        </div>
+
+        <div class="prof-stats">
+            <div class="stat-box">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                    <h3 id="totalTurmasProf">4 Turmas</h3>
+                    <p>Atribuídas a você</p>
+                </div>
+            </div>
+            <div class="stat-box">
+                <i class="fa-solid fa-book"></i>
+                <div>
+                    <h3 id="materiaProf">História</h3>
+                    <p>Sua Disciplina</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="prof-section">
+            <h3 class="section-sub"><i class="fa-solid fa-layer-group"></i> Turmas sob sua Responsabilidade</h3>
+            <div class="turmas-grid">
+                <div class="turma-card">
+                    <div class="turma-head">
+                        <h4>1º Ano - Ensino Médio A</h4>
+                        <span class="materia-badge">História</span>
+                    </div>
+                    <p>32 Alunos matriculados</p>
+                    <div class="turma-actions">
+                        <button class="btn-action primary"><i class="fa-solid fa-pen-to-square"></i> Lançar Notas</button>
+                        <button class="btn-action secondary"><i class="fa-solid fa-list-check"></i> Chamada</button>
+                    </div>
+                </div>
+
+                <div class="turma-card">
+                    <div class="turma-head">
+                        <h4>2º Ano - Ensino Médio B</h4>
+                        <span class="materia-badge">História</span>
+                    </div>
+                    <p>28 Alunos matriculados</p>
+                    <div class="turma-actions">
+                        <button class="btn-action primary"><i class="fa-solid fa-pen-to-square"></i> Lançar Notas</button>
+                        <button class="btn-action secondary"><i class="fa-solid fa-list-check"></i> Chamada</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prof-section box-white">
+            <h3 class="section-sub"><i class="fa-solid fa-table"></i> Lançamento Rápido de Frequência e Avaliação</h3>
+            <div class="table-responsive">
+                <table class="prof-table">
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Nome do Aluno</th>
+                            <th>Presença Hoje</th>
+                            <th>Nota Avaliação (0-10)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Ana Beatriz Souza</td>
+                            <td><label><input type="checkbox" checked class="chk-presenca"> Presente</label></td>
+                            <td><input type="number" step="0.5" value="9.0" class="input-nota"></td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Carlos Eduardo Lima</td>
+                            <td><label><input type="checkbox" checked class="chk-presenca"> Presente</label></td>
+                            <td><input type="number" step="0.5" value="7.5" class="input-nota"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn-salvar-diario"><i class="fa-solid fa-floppy-disk"></i> Salvar Diário</button>
+        </section>
+    </main>
+
+    <script src="../JS/professor.js"></script>
+    <script src="../JS/sessao.js"></script>
+</body>
+
+</html>

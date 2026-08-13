@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolHub - Área do Aluno</title>
+    <link rel="stylesheet" href="../CSS/inicio.css">
+    <link rel="stylesheet" href="../CSS/aluno.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="brand">
+            🎓 SchoolHub
+        </div>
+        <nav class="nav-links">
+            <a href="inicio.html">Início</a>
+            <a href="aluno.html" class="active">Área do Aluno</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="lista-espera.html">Rematrícula</a>
+            <a href="carrinho.html">Mensalidades</a>
+            <a href="pagamentos.html">Pagamentos</a>
+            <a href="professor.html">Área do Professor</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="dash-header">
+            <div>
+                <h2><i class="fa-solid fa-graduation-cap"></i> Painel do Aluno</h2>
+                <p>Acompanhe suas notas, frequência e atividades da sua turma.</p>
+            </div>
+            <span class="badge-turma">Carregando Turma...</span>
+        </div>
+
+        <div class="dash-summary">
+            <div class="summary-card blue">
+                <i class="fa-solid fa-star"></i>
+                <div>
+                    <span class="value">8.8</span>
+                    <span class="label">Média Geral</span>
+                </div>
+            </div>
+            <div class="summary-card green">
+                <i class="fa-solid fa-user-check"></i>
+                <div>
+                    <span class="value">96%</span>
+                    <span class="label">Frequência Total</span>
+                </div>
+            </div>
+            <div class="summary-card orange">
+                <i class="fa-solid fa-book-open"></i>
+                <div>
+                    <span class="value">3</span>
+                    <span class="label">Tarefas Pendentes</span>
+                </div>
+            </div>
+            <div class="summary-card red">
+                <i class="fa-solid fa-calendar-day"></i>
+                <div>
+                    <span class="value">18/08</span>
+                    <span class="label">Próxima Prova</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dash-grid">
+            <section class="dash-box">
+                <h3><i class="fa-solid fa-list-check"></i> Minhas Disciplinas e Notas</h3>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Disciplina</th>
+                                <th>1º Bimestre</th>
+                                <th>2º Bimestre</th>
+                                <th>Frequência</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="dash-box">
+                <h3><i class="fa-solid fa-clock-rotate-left"></i> Próximos Entregáveis</h3>
+                <ul class="task-list">
+                    <li class="task-item urgent">
+                        <div class="task-info">
+                            <strong>Trabalho de História</strong>
+                            <span>Revolução Industrial • Entrega até 14/08</span>
+                        </div>
+                        <span class="tag-date">Em 2 dias</span>
+                    </li>
+                    <li class="task-item">
+                        <div class="task-info">
+                            <strong>Lista de Exercícios - Matemática</strong>
+                            <span>Equações • Entrega até 17/08</span>
+                        </div>
+                        <span class="tag-date">Em 5 dias</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <script src="../JS/aluno.js"></script>
+    <script src="../JS/sessao.js"></script>
+</body>
+
+</html>
