@@ -29,25 +29,42 @@ JavaScript: Lógica de interação, gestão de sessões e dinâmica dos elemento
 Font Awesome: Ícone de apoio para tornar a navegação mais visual e agradável.
 
 📂 Organização dos Ficheiros
+
 Plaintext
 schoolhub/
 ├── CSS/
+
 │   ├── aluno.css
+
 │   ├── cadastro.css
+
 │   ├── carrinho.css
+
 │   ├── inicio.css
+
 │   ├── lista-espera.css
+
 │   ├── login.css
+
 │   ├── pagamentos.css
+
 │   └── professor.css
 ├── JS/
+
 │   ├── aluno.js
+
 │   ├── cadastro.js
+
 │   ├── carrinho.js
+
 │   ├── inicio.js
+
 │   ├── lista-espera.js
+
 │   ├── login.js
+
 │   ├── pagamentos.js
+
 │   └── sessao.js
 └── HTML/
     ├── aluno.html
