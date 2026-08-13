@@ -1,9 +1,10 @@
-#🎓 SchoolHub — Sistema de Gestão Escolar#
+#🎓 SchoolHub — Sistema de Gestão Escolar
+
 O SchoolHub é uma plataforma web criada para simplificar a rotina escolar, reunindo num só lugar tudo o que alunos, professores e encarregados de educação precisam no dia a dia.
 
 A ideia do projeto é oferecer uma navegação simples e direta, permitindo consultar notas, emitir pagamentos de mensalidades ou gerir turmas de forma prática.
 
-📌 O que podes encontrar no sistema?
+📌 O que você pode encontrar no sistema?
 Mural Inicial (inicio.html): O ponto de partida com os avisos mais recentes, eventos da escola e novidades da biblioteca.
 
 Área do Aluno (aluno.html): Espaço onde o estudante acompanha a sua média geral, faltas, notas por bimestre e datas de trabalhos futuros.
