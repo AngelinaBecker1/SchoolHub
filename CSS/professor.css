@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-/* --- Navbar --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -89,8 +88,6 @@ body {
 .btn-login-nav:hover {
     background-color: #3e5879 !important;
 }
-
-/* --- Área de Usuário Logado (sessao.js) --- */
 #areaUsuario {
     display: flex;
     align-items: center;
@@ -151,8 +148,6 @@ body {
     color: #dc2626;
     background-color: #fee2e2;
 }
-
-/* --- Container Principal --- */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -203,8 +198,6 @@ body {
 .btn-novo-aviso:hover {
     background-color: #3e5879;
 }
-
-/* --- Cards de Estatística --- */
 .prof-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -239,8 +232,6 @@ body {
     font-size: 0.8rem;
     color: #64748b;
 }
-
-/* --- Seções e Turmas --- */
 .prof-section {
     margin-bottom: 30px;
 }
@@ -323,8 +314,6 @@ body {
     color: #334155;
     border: 1px solid #cbd5e1;
 }
-
-/* --- Tabela do Diário --- */
 .box-white {
     background: #ffffff;
     padding: 24px;
