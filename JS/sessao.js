@@ -6,13 +6,11 @@ function atualizarMenuUsuario() {
     const navbar = document.querySelector(".navbar");
     if (!navbar) return;
 
-    // Remove o botão estático dentro do nav-links se existir
     const loginEstaticoNav = navbar.querySelector(".nav-links .btn-login-nav");
     if (loginEstaticoNav) {
         loginEstaticoNav.remove();
     }
 
-    // Gerencia/Cria a div da área do usuário na navbar
     let areaUsuario = document.getElementById("areaUsuario");
     if (!areaUsuario) {
         areaUsuario = document.createElement("div");
