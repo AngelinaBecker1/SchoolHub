@@ -6,15 +6,13 @@ function atualizarMenuUsuario() {
     const navbar = document.querySelector(".navbar");
     if (!navbar) return;
 
-    const loginEstatico = navbar.querySelector(".btn-login-nav");
-    if (loginEstatico && loginEstatico.parentElement === navbar) {
-        loginEstatico.remove();
-    }
-    const badgeEstatico = navbar.querySelector("#userBadge");
-    if (badgeEstatico && badgeEstatico.parentElement === navbar) {
-        badgeEstatico.remove();
+    // Remove o botão estático dentro do nav-links se existir
+    const loginEstaticoNav = navbar.querySelector(".nav-links .btn-login-nav");
+    if (loginEstaticoNav) {
+        loginEstaticoNav.remove();
     }
 
+    // Gerencia/Cria a div da área do usuário na navbar
     let areaUsuario = document.getElementById("areaUsuario");
     if (!areaUsuario) {
         areaUsuario = document.createElement("div");
@@ -28,6 +26,7 @@ function atualizarMenuUsuario() {
     } catch (e) {
         usuarioLogado = null;
     }
+
     if (usuarioLogado && usuarioLogado.nome && usuarioLogado.nome !== "undefined") {
         const nome = usuarioLogado.nome;
         const tipo = usuarioLogado.tipo || "Aluno";
